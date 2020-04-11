@@ -226,12 +226,12 @@ class Footer extends Component {
                                     <div className='row flex jc-start ai-start'>
                                         <ul className='socail-links flex jc-start ai-center'>
                                             <li>
-                                                <a href='#!' target='_blank'>
+                                                <a href='https://www.linkedin.com/in/georgi-gochev-00b199166/' target='_blank' rel="noopener noreferrer">
                                                     <LinkedInIcon  className='icon' alt='icon'/>
                                                 </a>
                                             </li>
                                             <li>
-                                                <a href='#!' target='_blank'>
+                                                <a href='https://github.com/GeogriGochev' target='_blank' rel="noopener noreferrer">
                                                     <GitHubIcon className='icon' alt='icon'/>
                                                 </a>
                                             </li>
