@@ -105,11 +105,11 @@ const CONTENT_DATA = {
             },
             {
                 id: '7',
-                name: 'Monster-rolodex project',
-                year: '2020',
-                tag: 'personal',
-                imgUrl: 'https://robohash.org/8?set=set2',
-                linkUrl: 'Github',
+                name: 'Vti-capital',
+                year: '2019',
+                tag: 'wordpress',
+                imgUrl: 'https://vticapital.com/wp-content/uploads/2018/11/header-new-1.jpg',
+                linkUrl: 'https://vticapital.com/',
                 soon: '',
                 size: ''
             },
@@ -119,7 +119,7 @@ const CONTENT_DATA = {
                 year: '2020',
                 tag: 'personal',
                 imgUrl: '',
-                linkUrl: 'Github',
+                linkUrl: '',
                 soon: 'comming soon',
                 size: 'down'
             },
@@ -129,7 +129,7 @@ const CONTENT_DATA = {
                 year: '2020',
                 tag: 'personal',
                 imgUrl: '',
-                linkUrl: 'Github',
+                linkUrl: '',
                 soon: 'comming soon',
                 size: ''
             },
