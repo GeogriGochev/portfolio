@@ -8,6 +8,15 @@ const SlideRBox = styled.div`
     margin: 0 10px;
     height: 380px;
 
+    a {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        z-index: 2;
+    }
+
     .image-wrapper {
         position: absolute;
         top: 50%;
@@ -52,6 +61,7 @@ const SlideRBox = styled.div`
                     transform: scaleX(0);
                     transform-origin: bottom right;
                     transition: transform 0.3s;
+                    transition-delay: 0.30s;
                 }
             }
             
@@ -70,12 +80,30 @@ const SlideRBox = styled.div`
             .content {
                 transform: translateY(0);
                 opacity: 1;
+
+                .name {
+                    .inner-text {
+                        &:after {
+                            transform-origin: bottom left;
+                            transform: scaleX(1);
+                        }
+                    }
+                }
             }
         }
         @media( max-width: 1025px ) {
             .content {
                 transform: translateY(0);
                 opacity: 1;
+
+                .name {
+                    .inner-text {
+                        &:after {
+                            transform-origin: bottom left;
+                            transform: scaleX(1);
+                        }
+                    }
+                }
             }
             .image-wrapper  {
                 img {
@@ -105,13 +133,14 @@ const SlideRBox = styled.div`
 
 const SliderBox = ({linkUrl,imgUrl,tag,name}) => (
     <SlideRBox className='slider-box flex ai-end' data-tag ={tag}>
+        <a href={linkUrl} rel="noopener noreferrer" target='_blank'><span className='inner-text'></span></a>
         <div className='image-wrapper'>
             <img src={imgUrl ? imgUrl : 'customIMG'} alt='img'/>
         </div>
         <div className='content'>
             <p className='tag'>{tag}</p>
             <div className='row flex ai-center jc-sb'>
-                <a href={linkUrl} rel="noopener noreferrer" className='name' target='_blank'><span className='inner-text'>{name}</span></a>
+                <p className='name' ><span className='inner-text'>{name}</span></p>
             </div>
         </div>
     </SlideRBox>

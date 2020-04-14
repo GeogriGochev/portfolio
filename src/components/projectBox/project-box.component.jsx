@@ -14,6 +14,15 @@ const ProjecTBox = styled.div`
             height: 380px;
             border-radius: 10px;
             box-shadow: 0px 10px 25px 0px rgba(0, 0, 0, 1);
+
+            a {
+                position: absolute;
+                top: 0;
+                left: 0;
+                width: 100%;
+                height: 100%;
+                z-index: 2;
+            }
         }
 
         .image-wrapper {
@@ -117,6 +126,7 @@ const ProjecTBox = styled.div`
                         transform: scaleX(0);
                         transform-origin: bottom right;
                         transition: transform 0.3s;
+                        transition-delay: 0.30s;
                     }
                 }
                 
@@ -135,6 +145,15 @@ const ProjecTBox = styled.div`
             .content {
                 transform: translateY(0);
                 opacity: 1;
+
+                .name {
+                    .inner-text {
+                        &:after {
+                            transform-origin: bottom left;
+                            transform: scaleX(1);
+                        }
+                    }
+                }
             }
         }
 
@@ -226,6 +245,7 @@ const ProjecTBox = styled.div`
 const ProjectBox = ({linkUrl,imgUrl,tag,name,soon,size}) => (
     <ProjecTBox className={`project-box box flex ai-center ${size} ${soon && 'soon-tag'}`}>
         <div className='content-wrapper flex ai-end'>
+            <a href={linkUrl} rel="noopener noreferrer" target='_blank'><span className='inner-text'></span></a>
             <span className='soon'>Comming soon</span>
             <div className='image-wrapper'>
                 {
@@ -242,7 +262,7 @@ const ProjectBox = ({linkUrl,imgUrl,tag,name,soon,size}) => (
             <div className='content'>
                 <p className='tag'>{tag}</p>
                 <div className='row flex ai-center jc-sb'>
-                    <a href={linkUrl} rel="noopener noreferrer" className='name' target='_blank'><span className='inner-text'>{name}</span></a>
+                    <p className='name'><span className='inner-text'>{name}</span></p>
                 </div>
             </div>
         </div>
