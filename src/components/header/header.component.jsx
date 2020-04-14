@@ -120,7 +120,7 @@ class Header extends Component {
                         </div>
                         <div className='rest flex ai-end'>
                             <ul className='nav flex ai-center'>
-                                <li><NavLink exact={true} to='/'> <span className='inner-text'>Home</span> </NavLink></li>
+                                <li><NavLink exact={true} to='/portfolio'> <span className='inner-text'>Home</span> </NavLink></li>
                                 <li><NavLink to="/projects"> <span className='inner-text'>Projects</span> </NavLink></li>
                                 <li><NavLink to="/about"> <span className='inner-text'>About</span></NavLink></li>
                             </ul>

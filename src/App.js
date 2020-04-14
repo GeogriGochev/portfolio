@@ -30,7 +30,7 @@ class App extends Component {
         <ContactModal closeModal={closeModal}/>
         <Header/>
         <Switch>
-          <Route exact path='/' component={HomePage} />
+          <Route exact path='/portfolio' component={HomePage} />
           <Route path='/projects' component={ProjectsPage} />
           <Route path='/about' component={AboutPage} />
         </Switch>

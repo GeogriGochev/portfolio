@@ -255,7 +255,7 @@ class HeroSection extends Component {
                                 </h1>
                                 <p className='subtitle animated'>{position}</p>
                                 <div className='buttons-wrapper flex ai-center'>
-                                    <a className='btn orange' href='https://drive.google.com/file/d/1cR0EqXDpXhuPpDpYxH0Y-iP-lqs7E-nS/view?usp=sharing' target='_blank'  rel="noopener noreferrer">Download CV</a>
+                                    <a className='btn orange' href='https://drive.google.com/file/d/1iEDWWhnXuzHAu6Xjv5pPsoVwyL4VHpN9/view?usp=sharing' target='_blank'  rel="noopener noreferrer">Download CV</a>
                                     <Link to='/projects' className='btn trans'>My Work</Link>
                                 </div>
                             </div>
