@@ -193,7 +193,7 @@ class MobileNav extends Component {
             <MobilENav className='mobile-nav'>
                 <div className='row flex ai-center jc-sb'>
                     <div className='logo'>
-                        <NavLink className='logo-wrapper' to='/'>
+                        <NavLink className='logo-wrapper' to='/portfolio'>
                             <Logo className='svg'/>
                         </NavLink>
                     </div>
@@ -210,7 +210,7 @@ class MobileNav extends Component {
                     <img src={require('../../assets/images/mobile-nav.jpg')} className='mobile-back' alt='mobile-back'/>
                     <div className='nav-wrapper'>
                         <ul className='nav flex flex-column ai-start'>
-                            <li><NavLink exact={true} to='/'> <span className='inner-text'>Home</span> </NavLink></li>
+                            <li><NavLink exact={true} to='/portfolio'> <span className='inner-text'>Home</span> </NavLink></li>
                             <li><NavLink to="/projects"> <span className='inner-text'>Projects</span> </NavLink></li>
                             <li><NavLink to="/about"> <span className='inner-text'>About</span></NavLink></li>
                             <li><Button >Hire me!</Button></li>

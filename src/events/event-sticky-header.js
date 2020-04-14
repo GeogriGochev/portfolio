@@ -25,7 +25,16 @@ const eventScroll = () => {
         }
         })
     };
-    
+
+    document.addEventListener("DOMContentLoaded", function(){        
+        document.querySelectorAll('.toggle-nav .nav li a').forEach((el)=> {
+            el.addEventListener('click', () => {
+                document.querySelectorAll('body, .toggle-nav, .button-nav').forEach((els)=> {
+                    els.classList.remove('active')
+                })
+            })        
+        })
+    });
     
 }
 export default eventScroll;

@@ -98,6 +98,10 @@ input:-webkit-autofill:active {
   &.scroll {
     padding-top: 89px;
   }
+
+  @media screen and(max-width: 767px) {
+    padding-top: 89px;
+  }
 }
 
 .animated {

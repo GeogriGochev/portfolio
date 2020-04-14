@@ -114,7 +114,7 @@ class Header extends Component {
                 <div className='container'>
                     <div className='flex jc-sb ai-center desk-nav'>
                         <div className='logo'>
-                            <NavLink className='logo-wrapper' to='/'>
+                            <NavLink className='logo-wrapper' to='/portfolio'>
                                 <Logo className='svg'/>
                             </NavLink>
                         </div>
