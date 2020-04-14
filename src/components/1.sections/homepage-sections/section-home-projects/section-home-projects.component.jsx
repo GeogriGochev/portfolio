@@ -39,7 +39,11 @@ class ProjectsHomeSection extends Component {
             infinite: true,
             centerPadding: "100px",
             slidesToShow: 2,
-            speed: 500,
+            autoplay: true,
+            speed: 4000,
+            autoplaySpeed: 4000,
+            pauseOnHover: true,
+            cssEase: "linear",
             dots: true,
             responsive: [
                 {
