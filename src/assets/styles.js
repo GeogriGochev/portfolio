@@ -7,15 +7,6 @@ overflow: hidden;
 margin: 0 10px;
 height: 380px;
 
-a {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    z-index: 2;
-}
-
 .image-wrapper {
     position: absolute;
     top: 50%;
@@ -27,6 +18,15 @@ a {
     img {
         transform: scale(2);
     }
+}
+
+a {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 2;
 }
 
 .content {

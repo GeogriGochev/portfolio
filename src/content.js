@@ -114,16 +114,6 @@ const CONTENT_DATA = {
                 size: ''
             },
             {
-                id: '8',
-                name: 'Telelink Infra Services',
-                year: '2020',
-                tag: 'wordpress',
-                imgUrl: 'https://grind.studio/wp-content/uploads/2020/03/hero-img.jpg',
-                linkUrl: 'https://telelinkinfra.com/',
-                soon: '',
-                size: 'down'
-            },
-            {
                 id: '9',
                 name: 'React Colors Project',
                 year: '2020',
@@ -133,7 +123,16 @@ const CONTENT_DATA = {
                 soon: 'comming soon',
                 size: ''
             },
-            
+            {
+                id: '8',
+                name: 'Telelink Infra Services',
+                year: '2020',
+                tag: 'wordpress',
+                imgUrl: 'https://grind.studio/wp-content/uploads/2020/03/hero-img.jpg',
+                linkUrl: 'https://telelinkinfra.com/',
+                soon: '',
+                size: 'down'
+            },
         ]
     },
     about: {
