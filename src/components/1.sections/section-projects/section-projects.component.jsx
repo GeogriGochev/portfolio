@@ -1,24 +1,9 @@
 import React, { Component } from 'react';
 import ProjectBox from '../../projectBox/project-box.component';
-import styled from 'styled-components';
+import {ProjectListingStyles} from '../../../assets/styles';
 import CONTENT_DATA from '../../../content';
 
-const ProjectListing = styled.div`
-    .title {
-        margin-bottom: 60px;
-    }
-    @media( max-width: 1024px ) {
-        padding: 0 0 80px;
-    }
-
-    @media( max-width: 767px ) {
-        .title {
-            font-size: 1.875rem;
-            margin-bottom: 40px;
-}
-        }
-    }
-`;
+const ProjectListing = ProjectListingStyles;
 
 class ProjectsMasondry extends Component {
     constructor() {

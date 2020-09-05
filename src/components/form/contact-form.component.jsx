@@ -1,18 +1,9 @@
 import React, { Component } from 'react';
 import FormInput from '../inputBox/input-field.component';
 import ButtonSubmit from '../buttons/custom-button.component';
-import styled from 'styled-components';
+import {ContacTFormStyles} from '../../assets/styles';
 
-const ContacTForm = styled.div`
-    &   {
-        @media( max-width: 1025px ) {
-            form > .flex {
-                flex-wrap: wrap;
-                justify-content: center;
-            }
-        }
-    }
-`;
+const ContacTForm = ContacTFormStyles;
 
 class ContactForm extends Component {
     constructor(props) {

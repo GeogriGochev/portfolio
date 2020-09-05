@@ -3,24 +3,10 @@ import { Link } from 'react-router-dom';
 import SliderBox from '../../../sliderBox/custom-slider-box.component';
 import Slider from 'react-slick';
 import SectionHeading from '../../../section-heading/heading.component';
-import styled from 'styled-components';
+import {ProjectsSectionStyles} from '../../../../assets/styles';
 import CONTENT_DATA from '../../../../content';
 
-const ProjectsSection = styled.div`
-    &   {
-        padding-top: 0;
-
-        .btn-wrapper {
-            margin: 100px auto 0;
-            text-align: center;
-            padding-bottom: 20px;
-        }
-
-        .slide {
-            outline: none !important;
-        }
-    }
-`;
+const ProjectsSection = ProjectsSectionStyles;
 
 
 class ProjectsHomeSection extends Component {
