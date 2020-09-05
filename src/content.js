@@ -121,7 +121,7 @@ const CONTENT_DATA = {
                 imgUrl: 'https://grind.studio/wp-content/uploads/2020/03/hero-img.jpg',
                 linkUrl: 'https://telelinkinfra.com/',
                 soon: '',
-                size: ''
+                size: 'down'
             },
             {
                 id: '9',
@@ -131,7 +131,7 @@ const CONTENT_DATA = {
                 imgUrl: '',
                 linkUrl: '',
                 soon: 'comming soon',
-                size: 'down'
+                size: ''
             },
             
         ]
