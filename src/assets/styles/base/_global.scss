@@ -2,6 +2,7 @@
   box-sizing: border-box;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  font-family: 'Poppins', sans-serif !important;
 }
 
 img {
@@ -25,7 +26,6 @@ p {
 }
 
 body {
-  font-family: 'Poppins', sans-serif;
   background: #111;
 
   &.active {

@@ -1,4 +1,6 @@
 import React from 'react';
+import homeHero from './assets/images/hero1.jpg';
+import homeAboutSectionImage from './assets/images/skill.png';
 import { ReactComponent as Html } from './assets/images/icons/css.svg';
 import { ReactComponent as Wordpress } from './assets/images/icons/wordpress.svg';
 import { ReactComponent as Woo } from './assets/images/icons/woo.svg';
@@ -16,17 +18,17 @@ import { ReactComponent as Exp } from './assets/images/icons/movie-exp.svg';
 const CONTENT_DATA = {
     offerSection: {
         subtitle: 'Any offers ?',
-        title: "Don't hesitate to contact me"
+        title: "Don't hesitate to contact me",
     },
     homePage: {
         hero: {
             name: 'Georgi Gochev',
             position: 'A Front-end Developer',
-            imageUrl: require('./assets/images/hero1.jpg')
+            imageUrl: homeHero
         },
         about: {
             title: 'About me',
-            imgUrl: require('./assets/images/skill.png'),
+            imgUrl: homeAboutSectionImage,
             exp: <Exp className='svg animated'/>,
             text: 'Motivated individual, that is passionate about the things he is doing and never gives up. A person determined and ready to give all, to achieve his goals. I enjoy being a front-end developer, because it is helping me to develop my creativity. There is nothing better, than seeing the result of you hard work and the joy of the clients...',
             skills: {
@@ -234,7 +236,7 @@ const CONTENT_DATA = {
             },
             {
                 id: 'pSkill-6',
-                name: 'React-basics',
+                name: 'React',
                 icon: <ReactB/>
             },     
             {

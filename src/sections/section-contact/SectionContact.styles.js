@@ -1,0 +1,74 @@
+import styled from 'styled-components';
+import BackgroundImage from '../../assets/images/hire.jpg';
+
+export const ContacTSection = styled.div`
+    &   {
+        background: url('${BackgroundImage}') no-repeat center;
+        background-size: cover;
+        padding: 170px;
+        position: relative;
+
+        &::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: #000;
+            opacity: 0.5;
+            z-index: 0;
+        }
+
+        .content-wrapper {
+            position: relative;
+        }
+
+        .subtitle {
+            text-align: center;
+            font-size: 1.375rem;
+            line-height: 1.875rem;
+            font-weight: 300;
+            margin-bottom: 20px;
+            color: #fff;
+        }
+
+        .title {
+            text-align: center;
+            font-size: 2.5rem;
+            line-height: 3.125rem;
+            color: #fff;
+            font-weight: 600;
+        }
+
+        .btn-wrapper {
+            text-align: center;
+            margin-top: 60px;
+
+            .btn {
+                margin: auto;
+            }
+        }
+
+        @media( max-width: 1281px ) {
+            padding: 125px;
+        }
+
+        @media( max-width: 1025px ) {
+            padding: 100px;
+
+            .title {
+                margin-bottom: 30px;
+                font-size: 2.3rem;
+            }
+
+            .btn-wrapper {
+                margin-top: 30px;
+            }
+        }
+
+        @media( max-width: 768px ) {
+            padding: 100px 0;
+        }
+    }
+`;
